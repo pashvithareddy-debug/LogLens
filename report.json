@@ -1,0 +1,322 @@
+{
+  "summary": {
+    "total_requests": 575,
+    "errors": 26,
+    "error_rate": 0.0452,
+    "client_errors_4xx": 15,
+    "server_errors_5xx": 11,
+    "server_error_rate": 0.0191,
+    "first_event": "2026-09-28T10:01:09",
+    "last_event": "2026-09-28T13:58:59"
+  },
+  "status_codes": {
+    "200": 447,
+    "201": 102,
+    "401": 4,
+    "404": 1,
+    "429": 10,
+    "500": 8,
+    "502": 3
+  },
+  "methods": {
+    "GET": 405,
+    "POST": 170
+  },
+  "levels": {
+    "INFO": 549,
+    "WARNING": 15,
+    "ERROR": 11
+  },
+  "top_endpoints": [
+    {
+      "endpoint": "/api/users",
+      "requests": 224
+    },
+    {
+      "endpoint": "/api/orders",
+      "requests": 160
+    },
+    {
+      "endpoint": "/api/login",
+      "requests": 106
+    },
+    {
+      "endpoint": "/api/payment",
+      "requests": 64
+    },
+    {
+      "endpoint": "/api/reports",
+      "requests": 21
+    }
+  ],
+  "error_intelligence": {
+    "error_groups": [
+      {
+        "method": "GET",
+        "endpoint": "/api/orders",
+        "status": 429,
+        "count": 10,
+        "first_seen": "2026-09-28T10:21:38",
+        "last_seen": "2026-09-28T13:54:24"
+      },
+      {
+        "method": "POST",
+        "endpoint": "/api/payment",
+        "status": 500,
+        "count": 8,
+        "first_seen": "2026-09-28T12:16:37",
+        "last_seen": "2026-09-28T12:56:41"
+      },
+      {
+        "method": "POST",
+        "endpoint": "/api/login",
+        "status": 401,
+        "count": 4,
+        "first_seen": "2026-09-28T11:12:56",
+        "last_seen": "2026-09-28T12:48:03"
+      },
+      {
+        "method": "POST",
+        "endpoint": "/api/payment",
+        "status": 502,
+        "count": 3,
+        "first_seen": "2026-09-28T12:06:12",
+        "last_seen": "2026-09-28T12:32:10"
+      },
+      {
+        "method": "GET",
+        "endpoint": "/api/reports",
+        "status": 404,
+        "count": 1,
+        "first_seen": "2026-09-28T11:10:06",
+        "last_seen": "2026-09-28T11:10:06"
+      }
+    ],
+    "failing_endpoints": [
+      {
+        "endpoint": "/api/payment",
+        "errors": 11
+      },
+      {
+        "endpoint": "/api/orders",
+        "errors": 10
+      },
+      {
+        "endpoint": "/api/login",
+        "errors": 4
+      },
+      {
+        "endpoint": "/api/reports",
+        "errors": 1
+      }
+    ]
+  },
+  "endpoint_health": [
+    {
+      "endpoint": "/api/users",
+      "requests": 224,
+      "errors": 0,
+      "error_rate": 0.0,
+      "avg_ms": 97.7,
+      "p50_ms": 95.5,
+      "p95_ms": 136.0,
+      "p99_ms": 140.0
+    },
+    {
+      "endpoint": "/api/orders",
+      "requests": 160,
+      "errors": 10,
+      "error_rate": 0.0625,
+      "avg_ms": 173.8,
+      "p50_ms": 168.0,
+      "p95_ms": 254.0,
+      "p99_ms": 257.0
+    },
+    {
+      "endpoint": "/api/login",
+      "requests": 106,
+      "errors": 4,
+      "error_rate": 0.0377,
+      "avg_ms": 126.6,
+      "p50_ms": 123.0,
+      "p95_ms": 175.8,
+      "p99_ms": 177.0
+    },
+    {
+      "endpoint": "/api/payment",
+      "requests": 64,
+      "errors": 11,
+      "error_rate": 0.1719,
+      "avg_ms": 365.0,
+      "p50_ms": 284.0,
+      "p95_ms": 1017.8,
+      "p99_ms": 1135.8
+    },
+    {
+      "endpoint": "/api/reports",
+      "requests": 21,
+      "errors": 1,
+      "error_rate": 0.0476,
+      "avg_ms": 1118.4,
+      "p50_ms": 1126.0,
+      "p95_ms": 1458.0,
+      "p99_ms": 1487.6
+    }
+  ],
+  "performance": {
+    "has_data": true,
+    "slow_threshold_ms": 500.0,
+    "average_ms": 191.2,
+    "p50_ms": 126.0,
+    "p95_ms": 700.8,
+    "p99_ms": 1203.4,
+    "slow_requests": 32,
+    "timed_requests": 575,
+    "slowest": [
+      {
+        "endpoint": "/api/reports",
+        "avg_ms": 1118.4
+      },
+      {
+        "endpoint": "/api/payment",
+        "avg_ms": 365.0
+      },
+      {
+        "endpoint": "/api/orders",
+        "avg_ms": 173.8
+      },
+      {
+        "endpoint": "/api/login",
+        "avg_ms": 126.6
+      },
+      {
+        "endpoint": "/api/users",
+        "avg_ms": 97.7
+      }
+    ],
+    "fastest": [
+      {
+        "endpoint": "/api/users",
+        "avg_ms": 97.7
+      },
+      {
+        "endpoint": "/api/login",
+        "avg_ms": 126.6
+      },
+      {
+        "endpoint": "/api/orders",
+        "avg_ms": 173.8
+      },
+      {
+        "endpoint": "/api/payment",
+        "avg_ms": 365.0
+      },
+      {
+        "endpoint": "/api/reports",
+        "avg_ms": 1118.4
+      }
+    ]
+  },
+  "timeline": {
+    "requests_by_hour": {
+      "2026-09-28 10:00": 108,
+      "2026-09-28 11:00": 162,
+      "2026-09-28 12:00": 216,
+      "2026-09-28 13:00": 89
+    },
+    "errors_by_hour": {
+      "2026-09-28 10:00": 1,
+      "2026-09-28 11:00": 4,
+      "2026-09-28 12:00": 19,
+      "2026-09-28 13:00": 2
+    },
+    "peak_traffic_hour": "2026-09-28 12:00",
+    "peak_error_hour": "2026-09-28 12:00"
+  },
+  "anomalies": [
+    {
+      "scope": "endpoint",
+      "name": "/api/payment",
+      "requests": 64,
+      "normal_error_rate": 0.0294,
+      "current_error_rate": 0.1719
+    }
+  ],
+  "hints": [
+    {
+      "endpoint": "/api/payment",
+      "requests": 64,
+      "error_rate": 0.1719,
+      "evidence": [
+        "Error rate: 17.2% (11 of 64 requests)",
+        "Average latency: 365 ms, P95: 1018 ms",
+        "Most common errors: 500 x8, 502 x3"
+      ],
+      "findings": [
+        {
+          "possible_issue": "High server-error rate combined with elevated latency.",
+          "investigate": "Check the service behind this endpoint and its downstream dependencies (databases, third-party APIs) for timeouts or saturation."
+        }
+      ]
+    },
+    {
+      "endpoint": "/api/orders",
+      "requests": 160,
+      "error_rate": 0.0625,
+      "evidence": [
+        "Error rate: 6.2% (10 of 160 requests)",
+        "Average latency: 174 ms, P95: 254 ms",
+        "Most common errors: 429 x10"
+      ],
+      "findings": [
+        {
+          "possible_issue": "Rate limiting (429) is being triggered.",
+          "investigate": "Check whether limits are sized correctly or a client is over-polling."
+        }
+      ]
+    },
+    {
+      "endpoint": "/api/reports",
+      "requests": 21,
+      "error_rate": 0.0476,
+      "evidence": [
+        "Error rate: 4.8% (1 of 21 requests)",
+        "Average latency: 1118 ms, P95: 1458 ms",
+        "Most common errors: 404 x1"
+      ],
+      "findings": [
+        {
+          "possible_issue": "Latency is elevated.",
+          "investigate": "Look at slow queries, cache misses, heavy payloads or resource contention."
+        }
+      ]
+    }
+  ],
+  "clients": {
+    "has_data": false,
+    "top": [],
+    "top_error_clients": [],
+    "suspicious": []
+  },
+  "health": {
+    "score": 83,
+    "label": "Degraded",
+    "penalties": {
+      "errors": 2.7,
+      "server_errors": 3.8,
+      "latency": 5.6,
+      "anomalies": 5
+    },
+    "caps": {
+      "errors": 30,
+      "server_errors": 40,
+      "latency": 20,
+      "anomalies": 10
+    }
+  },
+  "meta": {
+    "source": "sample.log",
+    "filters": {},
+    "skipped_lines": 0
+  }
+}
