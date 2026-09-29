@@ -85,7 +85,6 @@ LogLens parses supported log formats and converts them into a normalized interna
 There are **4 backticks** at the end. It should be **3 backticks**:
 
 ```markdown
-```text
 Raw Log
    ↓
 Parsing
