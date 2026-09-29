@@ -1,4 +1,4 @@
-````markdown
+
 # 🔍 LogLens
 
 > **Turn raw application logs into actionable engineering insights.**
@@ -240,4 +240,4 @@ GitHub: [@pashvithareddy-debug](https://github.com/pashvithareddy-debug)
 Built by **Ashvitha Reddy** as a practical developer-tool project.
 
 </div>
-```
+
