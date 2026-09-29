@@ -81,6 +81,10 @@ Real-world logs can follow different formats and structures.
 
 LogLens parses supported log formats and converts them into a normalized internal representation before analysis.
 
+
+There are **4 backticks** at the end. It should be **3 backticks**:
+
+```markdown
 ```text
 Raw Log
    ↓
@@ -93,9 +97,9 @@ Analysis
 Insights
    ↓
 Report
-````
 
 This architecture separates data ingestion from analysis and reporting, making the system easier to maintain and extend.
+
 
 ### 🚨 Anomaly Detection
 
